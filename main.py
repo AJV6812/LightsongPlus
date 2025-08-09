@@ -123,7 +123,7 @@ async def on_button_click(interaction: disnake.MessageInteraction):
         ],
     )
 
-    await interaction.edit_original_response("Please read, edit and COPY the ID generated below into the channel. Otherwise, nobody can see it.", delete_after=300)
+    await interaction.edit_original_response("Please read, edit and COPY the ID generated below into the channel. Otherwise, nobody can see it.")
 
     await interaction.followup.send(response.output_text, ephemeral=True, delete_after=300)
 

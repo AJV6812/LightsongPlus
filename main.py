@@ -74,7 +74,7 @@ async def on_button_click(interaction: disnake.MessageInteraction):
     )
 
     if original_message.author != interaction.author:
-        await interaction.response.send_message("You are not the original sender!")
+        await interaction.response.send_message("You are not the original sender!", ephemeral=True)
         return
 
     await interaction.response.send_message("Waiting for GPT...", ephemeral=True)
